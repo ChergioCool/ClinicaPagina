@@ -1,0 +1,70 @@
+body {
+    font-family: arial, helvetica;
+    background:url("https://static.vecteezy.com/system/resources/previews/002/268/676/original/hospital-corridor-with-waiting-chairs-on-the-sides-free-photo.jpg");
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+    background-size:cover;
+}
+   .menu{
+    list-style: none;
+    padding: 20;
+    background: #5f87bb;
+    width: 100%;
+    margin:15;
+    
+   }
+
+.menu li a{
+    text-decoration: none;
+    color:rgb(0, 0, 0);
+    padding: 10px;
+    display: block;
+    margin: 0 3rem;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.menu li{
+    display: inline-block;
+    text-align: center;
+}
+
+.menu li a:hover{
+    background: #51a1da;
+
+}
+
+/* texto de especialidades */
+#text-center{        
+    Text-align:center;
+}
+
+h1	{
+    Text-align:center;
+}
+
+/* imagenes */
+
+div.galeria{
+    margin: 10px, 20px;
+    box-shadow: 0 4px 8px 0 lightskyblue, 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    float: left;
+    width: 300px;
+}
+
+div.galeria img{
+    width: 100%;
+    height: 200px;
+
+}
+
+div.galeria:hover{
+    border: 1px solid #00aae4;
+    transform: rotate(-3deg);
+}
+
+div.pie {
+    text-align: center;
+    text-shadow: 2px 2px 5px #00aae4;
+    padding: 20px;
+}

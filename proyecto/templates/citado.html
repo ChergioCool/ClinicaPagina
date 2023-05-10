@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<!-- Created By CodingLab - www.codinglabweb.com -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../static/css/citado.css">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body>
+  <div class="container">
+    <div class="title">Cita</div>
+    <div class="content">
+      <form action="{{url_for('guardar_citado')}}" method="post">
+        <div class="user-details">
+          <div class="input-box">
+            <span class="details">Nombre completo</span>
+            <input type="text" placeholder="Nombre" name="Nombre" id="Nombre"required>
+          </div>
+          <div class="input-box">
+            <span class="details">Numero de telefono</span>
+            <input type="text" placeholder="Numero" name="Numero" id="Numero" required>
+          </div>
+          <div class="input-box">
+            <span class="details">E-mail</span>
+            <input type="text" placeholder="ejemplo@gmail.com" name="Mail" id="Mail" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Sintomas</span>
+            <input type="text" placeholder="Sintomas" name="Sintomas" id="Sintomas" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Fecha</span>
+            <input type="date" placeholder="DIA/MES/AÑO" name="Fecha" id="Fecha" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Departamento</span>
+            <input type="text" placeholder="Area" name="Area" id="Area" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Hora</span>
+            <input type="text" placeholder="Hora" name="Hora" id="Hora" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Genero</span>
+            <input type="text" placeholder="Genero" name="Genero" id="Genero" required>
+          </div>
+        </div>
+            <button>pedir cita</button>
+      </form>
+    </div>
+  </div>
+
+</body>
+</html>

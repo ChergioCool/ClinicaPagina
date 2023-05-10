@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static',filename = 'css/update.css') }}">
+    <title>EDITOR</title>
+</head>
+<body>
+
+  <form action="{{url_for('pdf_imprimir')}}" method="post">
+    {# Enviar el id en un campo oculto #}
+    <input type="hidden" name="id" value="{{dato[0]}}">
+    <br><br>
+    <input value="{{dato[1]}}" required type="text" class="controls" placeholder="Nombres" name="Nombres" id="Nombres">
+    <br>
+    <input value="{{dato[2]}}" required type="text" class="controls" placeholder="Apellidos" name="Apellidos" id="Apellidos">
+    <br>
+    <input value="{{dato[3]}}" required type="text"  class="controls" placeholder="Tipo_de_sangre" name="Tipo_de_sangre" id="Tipo_de_sangre">
+    <br>
+    <input value="{{dato[4]}}" required type="text" class="controls" placeholder="Fecha_de_nacimiento" name="Fecha_de_nacimiento" id="Fecha_de_nacimiento">
+    <br>
+    <input value="{{dato[5]}}" required type="number" class="controls" placeholder="Telefono" name="Telefono" id="Telefono">
+    <br>
+    <input value="{{dato[6]}}" required type="text" class="controls" placeholder="direccion" name="direccion" id="direccion">
+    <br>
+    <input value="{{dato[7]}}" required type="email" class="controls" placeholder="correo" name="correo" id="correo">
+    <br><br>
+    <button type="submit" class="boton">Imprimir</button>
+  </form>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/registro.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Overpass&display=swap" rel="stylesheet">
+    <title>Registro</title>
+</head>
+<body>
+   
+      
+        <header style="background-color: #022B61; border-bottom: 3px solid #D2A92D">
+            
+
+            <div class="container">
+    
+                <div class="row align-content-center">
+                    <div class=" col">
+                        <a href="">
+                           
+                        </a>
+                    </div>
+    
+                    <div class="col-2">
+                        <a href="#">
+                           
+                        </a>
+                    </div>
+                </div>
+    
+            </div><div class="row align-content-center" style="background-color: #2e578c;">
+            </div>
+        </header>
+
+<!-- wea de registro -->
+<section class="form-login">
+    <h5>Registro</h5>
+    <form action="{{url_for('guardar_usuario')}}" method="post">
+
+    <input required type="text" class="controls" placeholder="nombre" name="name" id="name"> 
+    <input required type="text" class="controls" placeholder="apellido paterno" name="paterno" id="paterno">
+    <input required type="text" class="controls" placeholder="apellido materno" name="materno" id="materno">
+    <input required type="text" class="controls" placeholder="correo" name="correo" id="correo">
+    <input required type="text" class="controls" placeholder="numero" name="numero" id="numero">
+    <input required type="text" class="controls" placeholder="codigo postal" name="cp" id="cp">
+
+    <input required type="text" class="controls" placeholder="password" name="password" id="password">
+    
+    <button type="submit" class="buttons">Guardar</button>
+    <a href="pagina.html">inicio</a>
+        </p>
+</section>
+        
+       
+
+       
+         
+     </form>
+</body>
+</html>

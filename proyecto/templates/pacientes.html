@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static',filename = 'css/update.css') }}">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Registrarse</h2>
+    <form action="{{url_for('guardar_paciente')}}" method="post">
+        <input required type="text" class="controls" placeholder="Nombres" name="Nombres" id="Nombres">
+        <br>
+        <input required type="text" class="controls" placeholder="Apellidos" name="Apellidos" id="Apellidos">
+        <br>
+        <input required type="text"  class="controls" placeholder="Tipo_de_sangre" name="Tipo_de_sangre" id="Tipo_de_sangre">
+        <br>
+        <input required type="text" class="controls" placeholder="Fecha_de_nacimiento" name="Fecha_de_nacimiento" id="Fecha_de_nacimiento">
+        <br>
+        <input required type="number" class="controls" placeholder="Telefono" name="Telefono" id="Telefono">
+        <br>
+        <input required type="text" class="controls" placeholder="direccion" name="direccion" id="direccion">
+        <br>
+        <input required type="email" class="controls" placeholder="correo" name="correo" id="correo">
+        <br><br>
+        <button type="submit" class="boton">Guardar</button>    
+        </form>
+        <button class="boton">
+            <a href="{{url_for('datos')}}" >BASE DE DATOS</a>
+        </button>
+</body>
+</html>
